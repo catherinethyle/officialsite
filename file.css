@@ -1,1 +1,31 @@
+html {
+  color: #77dd77;
+  background-color: white;
+  font-family: 'Inconsolata', monospace;
+  font-size: 12px;
+}
 
+h1 {
+  font-size: 85px;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: black;
+}
+
+.boxed {
+  border: 5px solid black;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15%;
+}
