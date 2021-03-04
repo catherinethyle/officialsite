@@ -1,31 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap");
+
 html {
-  color: #77dd77;
-  background-color: white;
-  font-family: 'Inconsolata', monospace;
-  font-size: 12px;
+  color: #fff5d9;
+  background-color: /*#7e5f32*/black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+/* unvisited link*/
+a:link {
+  color: #bedbff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #bedbff;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1 {
-  font-size: 85px;
-  color: black;
+  font-size: 45px;
   text-align: center;
+  font-style: normal;
+  width: 100%;
 }
 
 h2 {
-  font-size: 25px;
-  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 10px;
   text-align: center;
 }
 
 p {
-  color: black;
+  font-size: 10px;
+  width: 90%;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+}
+
+p1 {
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  color: pink;
+}
+
+p2 {
+  color: yellow;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 65% 65%;
+  width: 70%;
+  justify-content: center;
+  padding:0% 15% 0% 15%;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  /*top, right, bottom, left*/
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 40% 40% 40%;
+  width: 60%;
+  padding-right: 26.5%;
+  padding-left: 13.5%;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  /*top, right, bottom, left*/
+}
+
+.main {
+  text-align: center;
 }
 
 .boxed {
-  border: 5px solid black;
+  border: 5px /*solid #fff5d9*/;
   width: 50%;
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 15%;
+}
+
+.boxed2 {
+  border: 2.5px solid #bedbff;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+.img2 {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.container {
+  color: /*#fff5d9*/pink;
+  font-size: 10px;
+  width: 90%;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 2px solid /*black #fff5d9*/pink;
+  width: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.container2 {
+  color: yellow;
+  text-align: center;
+  border: 2px solid /*black #fff5d9*/pink;
+  font-size: 7px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 7%, 0%, 1%, 0%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.gallery {
+  width: 60%;
+  /*margin-left: 20%;
+  margin-right: 20%;*/
+  padding-left: 20%;
+  padding-right: 20%
+  text-align: center;
+}
+
+.gallery2 {
+  width: 80%;
+  /*margin-left: 20%;
+  margin-right: 20%;*/
+  padding-left: 10%;
+  padding-right: 10%
+  text-align: center;
+}
+
+.toprow {
+  text-align: center;
+  padding-top: 0%;
+  padding-bottom: 100%;
+}
+
+.topnav {
+  font-size: 16px;
+  text-align: center;
+  padding:0% 30% 100% 30%; /*top, right, bottom, left*/
+}
+
+/*stye of links inside nav bar*/
+.topnav a {
+  font-size: 16px;
+  text-align: center;
+  height: 10%;
+}
+
+footer {
+  /*padding-top: 20%;
+  padding-bottom: 0%;*/
+  position: relative;
+  top: 45px;
+  color: #87de6a;
+  padding:0% 5% 4% 5%; /*top, right, bottom, left*/
 }
