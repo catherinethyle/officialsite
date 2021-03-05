@@ -55,6 +55,7 @@ h2 {
 h3 {
   font-size: 10px;
   text-align: center;
+  #87de6a;
 }
 
 p {
@@ -92,11 +93,11 @@ p2 {
 .grid-container1 {
   display: grid;
   grid-template-columns: auto auto auto;
-  width: 70%;
+  width: 90%;
   grid-column-gap: 1%;
   grid-row-gap: 1%;
   justify-content: center;
-  padding:0% 15% 0% 15%;
+  padding:0% 5% 0% 5%;
   /*top, right, bottom, left*/
 }
 
@@ -180,6 +181,8 @@ p2 {
 .toprow {
   text-align: center;
   padding-top: 0%;
+  width: 60%;
+  margin: auto;
 }
 
 .topnav {
@@ -189,16 +192,46 @@ p2 {
   border: 1px solid #bedbff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
   .grid-container1 {
     display: grid;
-    grid-template-columns: auto;
-    width: 70%;
+    grid-template-columns: 85%;
+    width: 80%;
     grid-column-gap: 1%;
     grid-row-gap: 1%;
     justify-content: center;
-    padding:0% 15% 0% 15%;
+    padding:0% 10% 0% 10%;
     /*top, right, bottom, left*/
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 85%;
+    width: 80%;
+    justify-content: center;
+    padding:0% 10% 0% 10%;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    /*top, right, bottom, left*/
+  }
+  .toprow {
+    text-align: center;
+    padding-top: 0%;
+    width: 450px;
+    margin: auto;
+  }
+  footer {
+    /*padding-top: 20%;
+    padding-bottom: 0%;*/
+    top: 45px;
+    color: #87de6a;
+    margin:40% 0% 0% 0%; /*top, right, bottom, left*/
+    background-color: black;
+  }
+  footer {
+    position: relative;
+    top: 45px;
+    color: #87de6a;
+    padding:0% 0% 2.5% 0%; /*top, right, bottom, left*/
   }
 }
 
