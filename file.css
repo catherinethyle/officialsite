@@ -205,7 +205,6 @@ p2 {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: 85%;
     width: 80%;
     justify-content: center;
     padding:0% 10% 0% 10%;
