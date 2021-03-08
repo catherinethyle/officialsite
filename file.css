@@ -59,7 +59,7 @@ h3 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 13px;
   width: 90%;
   text-align: left;
   padding-left: 5%;
@@ -101,13 +101,26 @@ p2 {
   /*top, right, bottom, left*/
 }
 
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  justify-content: center;
+  padding:0% 5% 0% 5%;
+  /*top, right, bottom, left*/
+}
+
 .statement {
   float: left;
   padding-left: 5%;
-  padding-right: 5%;
-  width: 90%;
+  padding-right: 2%;
+  width: 500px;
+  height: auto;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 1.5%;
+  padding-top: 5%;
 }
 
 .main {
@@ -199,6 +212,15 @@ p2 {
   .toprow {
     max-width: 700px;
     max-height: auto;
+  }
+  .statement {
+    float: left;
+    padding-left: 5%;
+    padding-right: 2%;
+    width: 400px;
+    height: auto;
+    position: relative;
+    padding-bottom: 1.5%;
   }
 }
 
