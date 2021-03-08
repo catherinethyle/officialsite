@@ -103,9 +103,9 @@ p2 {
 
 .statement {
   float: left;
-  height: 500px;
   padding-left: 5%;
-  padding-right: 15px;
+  padding-right: 5%;
+  width: 90%;
   position: relative;
   padding-bottom: 15px;
 }
@@ -181,8 +181,11 @@ p2 {
 .toprow {
   text-align: center;
   padding-top: 0%;
-  width: 60%;
   margin: auto;
+  max-width: 1000px;
+  max-height: auto;
+  min-width: 450px;
+  min-height: auto;
 }
 
 .topnav {
@@ -190,6 +193,13 @@ p2 {
   display: inline-block;
   padding: .1%;
   border: 1px solid #bedbff;
+}
+
+@media only screen and (max-width: 600px) {
+  .toprow {
+    max-width: 700px;
+    max-height: auto;
+  }
 }
 
 footer {
