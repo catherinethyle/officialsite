@@ -72,9 +72,9 @@ p {
   max-width: 1050px;
 }
 
-/*navigation*/
+/*sub head*/
 p2 {
-  background-color: rgba(255, 20, 147, 0.83); /*pink*/
+  background-color: rgba(255, 69, 0, 0.83); /*orange*/
   width: 30%;
   color: white;
 }
@@ -132,8 +132,9 @@ img {
 }
 
 .sketchfab-embed-wrapper {
-  max-width: 100%;
-  max-height: 100%;
+  width: 640px;
+  height: 480px;
+  background-color: black;
 }
 
 .statement {
