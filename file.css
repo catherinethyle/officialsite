@@ -3,13 +3,13 @@
 html {
   color: black;
   font-family: 'Source Code Pro', monospace;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5;
   opacity: 100%;
-  padding-left: 75px;
-  padding-right: 75px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 a:link {
@@ -36,37 +36,35 @@ a:active {
   text-decoration: underline;
 }
 
+
+/*artist statement*/
 h1 {
   color: white;
   background-color: rgba(0, 64, 255, 0.83); /*blue*/
-  width: 250px;
-  font-size: 25px;
+  width: 350px;
+  font-size: 30px;
 }
 
+/*catisartist*/
 h2 {
   background-color: rgba(0, 255, 255, 0.83); /*cyan*/
-  width: 165px;
-  font-size: 25px;
+  width: 205px;
+  font-size: 30px;
   color: black;
 }
 
-
-/*decisisions title*/
-h3 {
+/*individual titles*/
+h7 {
   color: white;
   background-color: rgba(0, 64, 255, 0.83); /*blue*/
-  font-size: 25px;
-  height: 45px;
-  max-width: 750px;
+  font-size: 30px;
+  height: 90px;
+  max-width: 875px;
 }
 
-/*lay w me title*/
-h4 {
-  color: white;
-  background-color: rgba(0, 64, 255, 0.83); /*blue*/
-  font-size: 25px;
-  height: 70px;
-  max-width: 750px;
+/*debtween gallery piece toggle*/
+h9 {
+  text-align: right;
 }
 
 p {
@@ -74,9 +72,9 @@ p {
   max-width: 1050px;
 }
 
+/*navigation*/
 p2 {
   background-color: rgba(255, 20, 147, 0.83); /*pink*/
-  font-size: 18px;
   width: 30%;
   color: white;
 }
@@ -98,25 +96,10 @@ img {
   grid-row-gap: 20px;
 }
 
-.overlooked {
-  justify-content: flex-start;
-}
-
-.home {
-  background-image: url("home.gif");
-  background-position: left top;
-  background-repeat: repeat-y repeat-x;
-  background-color: rgba(147, 112, 219, 1);
-  background-size: 50%;
-}
-
-.statement {
-  background-image: url("statement.png");
+.digitalmedia {
+  background-image: url("digitalmedia.jpg");
   background-blend-mode: luminosity;
-}
-
-.navigation {
-  font-size: 18px;
+  background-size: cover;
 }
 
 .gallery {
@@ -128,6 +111,29 @@ img {
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+}
+
+.home {
+  background-image: url("home.gif");
+  background-position: left top;
+  background-repeat: repeat-y repeat-x;
+  background-color: rgba(147, 112, 219, 1);
+  background-size: 50%;
+}
+
+.overlooked {
+  justify-content: flex-start;
+}
+
+.statement {
+  background-image: url("statement.png");
+  background-blend-mode: luminosity;
+}
+
+.traditional {
+  background-image: url("traditional.jpg");
+  background-blend-mode: luminosity;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -153,18 +159,6 @@ img {
     background-color: rgba(255, 255, 0, 0.83);
     max-width: 650px;
   }
-  /*decisisions title*/
-  h3 {
-    font-size: 18px;
-    height: 60px;
-    max-width: 500px;
-  }
-  /*lay w me title*/
-  h4 {
-    font-size: 18px;
-    height: 60px;
-    max-width: 500px;
-  }
   .decisisions {
     grid-template-columns: 600px;
   }
@@ -177,10 +171,10 @@ img {
   .decisisions {
     grid-template-columns: 340px;
   }
-  /*lay w me title*/
-  h4 {
-    font-size: 16px;
-    height: 80px;
-    max-width: 500px;
+  html {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
