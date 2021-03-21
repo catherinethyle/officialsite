@@ -1,0 +1,20 @@
+/*animation code*/
+@@keyframes bleh {
+  0%    {opacity: 0%;}
+  25%   {opacity: 100%;}
+  50%   {opacity: 0%;}
+  75%   {opacity: 100%;}
+  100%  {opacity: 0%;}
+}
+
+/*element animation applies to*/
+example {
+  animation-name: bleh;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+  color: white;
+  background-color: blue;
+  width: 100%;
+  opacity: 100%;
+}

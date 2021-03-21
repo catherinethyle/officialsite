@@ -14,49 +14,58 @@ html {
 
 a:link {
   color: black;
-  background-color: rgba(0, 255, 0, 0.83); /*green*/
+  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
   text-decoration: underline;
 }
 
 a:visited {
   color: black;
-  background-color: rgba(0, 255, 0, 0.83); /*green*/
+  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
   text-decoration: underline;
 }
 
 a:hover {
   color: white;
-  background-color: rgba(255, 0, 255, 0.83); /*purple*/
+  background-color: rgba(255, 0, 255, 0.83); /*html magenta*/
   text-decoration: underline;
 }
 
 a:active {
   color: black;
-  background-color: rgba(0, 255, 0, 0.83); /*green*/
+  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
   text-decoration: underline;
 }
-
 
 /*artist statement*/
 h1 {
   color: white;
-  background-color: rgba(0, 64, 255, 0.83); /*blue*/
+  background-color: rgba(0, 0, 255, 0.83); /*html blue*/
   width: 350px;
   font-size: 30px;
 }
 
 /*catisartist*/
 h2 {
-  background-color: rgba(0, 255, 255, 0.83); /*cyan*/
+  background-color: rgba(0, 255, 255, 0.83); /*html cyan*/
   width: 205px;
   font-size: 30px;
   color: black;
 }
 
+/*coming soon*/
+h3 {
+  width:850px;
+  color: black;
+  background-color: yellow;
+  font-size: 30px;
+  text-align: justify;
+  text-align: left;
+}
+
 /*individual titles*/
 h7 {
   color: white;
-  background-color: rgba(0, 64, 255, 0.83); /*blue*/
+  background-color: rgba(0, 0, 255, 0.83); /*html blue*/
   font-size: 30px;
   height: 90px;
   max-width: 875px;
@@ -68,13 +77,13 @@ h9 {
 }
 
 p {
-  background-color: rgba(255, 255, 0, 0.83); /*yellow*/
+  background-color: rgba(255, 255, 0, 0.83); /*html yellow*/
   max-width: 1050px;
 }
 
 /*sub head*/
 p2 {
-  background-color: rgba(255, 69, 0, 0.83); /*orange*/
+  background-color: rgba(255, 69, 0, 0.83); /*html orangered*/
   width: 30%;
   color: white;
 }
@@ -127,6 +136,27 @@ img {
   background-size: 50%;
 }
 
+/*animation code*/
+@@keyframes bleh {
+  0%    {opacity: 0%;}
+  25%   {opacity: 100%;}
+  50%   {opacity: 0%;}
+  75%   {opacity: 100%;}
+  100%  {opacity: 0%;}
+}
+
+/*element animation applies to*/
+example {
+  animation-name: bleh;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+  color: white;
+  background-color: blue;
+  width: 100%;
+  opacity: 100%;
+}
+
 .overlooked {
   justify-content: flex-start;
 }
@@ -168,11 +198,20 @@ img {
     grid-template-columns: 250px 250px;
   }
   p {
-    background-color: rgba(255, 255, 0, 0.83);
+    background-color: rgba(255, 255, 0, 0.83); /*html yellow*/
     max-width: 650px;
   }
   .decisisions {
     grid-template-columns: 600px;
+  }
+  /*coming soon*/
+  h3 {
+    width:425px;
+    font-size: 15px;
+  }
+  .ba-oi-vid {
+    height: 480px;
+    width: 640px;
   }
 }
 
@@ -188,5 +227,17 @@ img {
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  .ba-oi {
+    width: 400px;
+    height: 325px;
+  }
+  .sketchfab-embed-wrapper {
+    width: 400px;
+    height: 325px;
+  }
+  .ba-oi-vid {
+    height: 240px;
+    width: 480px;
   }
 }
