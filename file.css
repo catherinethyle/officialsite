@@ -14,25 +14,32 @@ html {
 
 a:link {
   color: black;
-  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
+  /*background-color: rgba(0, 255, 0, 0.83); html lime*/
+  background-color: none; /*html lime*/
   text-decoration: none;
 }
 
 a:visited {
   color: black;
-  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
+  background-color: none; /*html lime*/
   text-decoration: none;
 }
 
 a:hover {
   color: white;
-  background-color: rgba(255, 0, 255, 0.83); /*html magenta*/
+  background-color: rgba(255, 255, 255, 0.15); /*html lime*/
   text-decoration: none;
 }
 
 a:active {
   color: black;
-  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
+  background-color: none; /*html lime*/
+  text-decoration: none;
+}
+
+.galleryLink a {
+  color: none;
+  background-color: none; /*html lime*/
   text-decoration: none;
 }
 
@@ -74,11 +81,13 @@ h7 {
 /*debtween gallery piece toggle*/
 h9 {
   text-align: right;
+  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
 }
 
 p {
   background-color: rgba(255, 255, 0, 0.83); /*html yellow*/
   max-width: 1050px;
+  padding: 10px;
 }
 
 /*sub head*/
@@ -117,6 +126,17 @@ img {
   background-size: cover;
 }
 
+/*.gallery {
+  max-width: 55%;
+  /*top, right, bottom, left
+  margin: 10%, 10%, 10%, 15%;
+  padding: 5%, 5%, 5%, 5%;
+  grid-template-columns: 250px 250px 250px 250px;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}*/
+
 .gallery {
   max-width: 55%;
   /*top, right, bottom, left*/
@@ -128,33 +148,26 @@ img {
   grid-row-gap: 15px;
 }
 
+.skills {
+  max-width: 55%;
+  /*top, right, bottom, left*/
+  margin: 10%, 10%, 10%;
+  padding: 5%, 5%, 5%, 5%;
+  grid-template-columns: 250px 250px 250px;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+
 .home {
-  background-image: url("home.gif");
-  background-position: left top;
-  background-repeat: repeat-y repeat-x;
-  background-color: rgba(147, 112, 219, 1);
-  background-size: 50%;
+  background-image: url("home.jpg");
+  background-size: 100%;
 }
 
-/*animation code*/
-@@keyframes bleh {
-  0%    {opacity: 0%;}
-  25%   {opacity: 100%;}
-  50%   {opacity: 0%;}
-  75%   {opacity: 100%;}
-  100%  {opacity: 0%;}
-}
-
-/*element animation applies to*/
-example {
-  animation-name: bleh;
-  animation-duration: 5s;
-  animation-iteration-count: 4;
-  animation-timing-function: linear;
-  color: white;
-  background-color: blue;
-  width: 100%;
-  opacity: 100%;
+.navigation {
+  background-color: rgba(0, 255, 0, 0.83); /*html lime*/
+  width: 275px;
 }
 
 .overlooked {
@@ -183,7 +196,6 @@ example {
     grid-template-columns: 250px 250px 250px;
   }
   .home {
-    background-image: url("home.gif");
     background-position: left top;
     background-color: rgba(147, 112, 219, 1);
     background-size: 100%;
@@ -239,5 +251,18 @@ example {
   .ba-oi-vid {
     height: 240px;
     width: 480px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    max-width: 55%;
+    /*top, right, bottom, left*/
+    margin: 10%, 10%, 10%, 15%;
+    padding: 5%, 5%, 5%, 5%;
+    grid-template-columns: 250px;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
   }
 }
