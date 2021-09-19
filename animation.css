@@ -1,20 +1,14 @@
-/*animation code*/
-@@keyframes bleh {
-  0%    {opacity: 0%;}
-  25%   {opacity: 100%;}
-  50%   {opacity: 0%;}
-  75%   {opacity: 100%;}
-  100%  {opacity: 0%;}
+/* The animation code */
+@construction example {
+  from {width: 0px;}
+  to {width: 300px;}
 }
 
-/*element animation applies to*/
-example {
-  animation-name: bleh;
-  animation-duration: 5s;
-  animation-iteration-count: 4;
-  animation-timing-function: linear;
-  color: white;
-  background-color: blue;
-  width: 100%;
-  opacity: 100%;
+/* The element to apply the animation to */
+p4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
 }
