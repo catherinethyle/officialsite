@@ -1,8 +1,8 @@
 html {
   padding-left: 5%;
   padding-top: 1%;
-  font-family: 'arial', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
   text-align: left;
   background-image: url("photos/bg.gif");
   background-blend-mode: luminosity;
@@ -35,20 +35,22 @@ a:active {
 }
 
 h1 {
-  font-size: 30px;
   font-style: bold;
   text-align: left;
 }
 
 h2 {
-  font-size: 15px;
-  font-style: bold;
+  font-style: normal;
   text-align: left;
+  font-size: 10px;
 }
 
 /*basic css*/
 body {
 
+}
+
+head {
 }
 
 /*gallery grid*/
@@ -70,80 +72,19 @@ body {
   box-sizing: border-box;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-.mySlides {
-  display: block;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-/*click thru gallery end*/
-
 .navigation {
-  font-size: 20px;
+  font-size: 10px;
   padding-bottom: 10px;
 }
 
 .text {
-  width: 60%;
-  background-color: rgba(245, 245, 220, 0.33);
-  font-size: 15px;
+  width: 85%;
+  background-color: rgba(245, 245, 220, 0.50);
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* og dimension 200 x 300 */
