@@ -1,0 +1,127 @@
+
+html {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Nanum Pen Script', cursive;
+  /* background-image: url('img/bg.jpg');
+  background-size: auto; */
+}
+
+/* :link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  text-decoration: underline;
+} */
+
+body {
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+/* button {
+  font-family: 'Sacramento', cursive;
+  font-size: 20px;
+  font-weight: 575;
+  width: 175px;
+  background-color: rgb(255, 255, 255);
+} */
+
+canvas {
+  display: block;
+  align: center;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+p {
+  color: white;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-weight: 575;
+  width: 1000px;
+  align: center;
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* for demo version */
+#myCanvas {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: alta-california, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* #myStatement {
+  padding-left: 20px;
+  display: block;
+  font-size: 10px;
+}
+
+#leftStatement {
+  width: 75%;
+  float: left;
+}
+
+#rightStatement {
+  width: 20%;
+  float: right;
+  padding-top: 50px;
+}
+
+#heartPic {
+  width: 125px;
+  height: auto;
+}
+
+#left {
+  width: 69%;
+  float: left;
+}
+
+#right {
+  width: 10%;
+  font: (255, 255, 255);
+  padding-top: 250px;
+  float: right;
+} */
+
+/* original
+#myCanvas {
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+} */
+
+/* #myButton {
+  display: block;
+} */

@@ -1,0 +1,89 @@
+@import url('txt/sourceCodePro.ttf');
+
+html {
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px;
+  color: white;
+  background-color: black;
+  background-image: url("img/bg.gif");
+  background-position: center;
+  background-size: auto;
+  font-family: 'Source Code Pro', monospace;
+}
+
+a:link {
+  color: white;
+  background-color: none; /*html lime*/
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: none; /*html lime*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: coral;
+  background-color: rgba(245, 245, 220, 0.33); /*html beige*/
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: pink; /*html lime*/
+  text-decoration: underline;
+}
+
+canvas {
+  display: block;
+}
+
+#header {
+  display: flex;
+  padding: 5%, 5%, 5%, 5%;
+}
+
+#info {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* background-color: #dfada695; */
+  width: 700px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px, 20px, 20px, 20px;
+  border-radius: 20px;
+  border: 5px;
+  border-style: dashed;
+}
+
+#header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 700px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px, 10px, 10px, 10px;
+  /* background-color: #aaa8dc95; */
+  border-radius: 20px;
+  border: 5px;
+  border-style: dashed;
+}
+
+#p5sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #eee9cb95; */
+  border-radius: 20px;
+  border: 5px;
+  border-style: dashed;
+  width: 700px;
+  margin-left: 20%;
+  margin-right: 20%;
+}

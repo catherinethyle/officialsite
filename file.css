@@ -4,7 +4,7 @@ html {
   font-size: 10px;
   font-family: 'DM Mono', monospace;
   text-align: left;
-  background-image: url("photos/bg.gif");
+  background-image: url("index-img/bg.gif");
   background-blend-mode: luminosity;
   background-size: cover;
 }

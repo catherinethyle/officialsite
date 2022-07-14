@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="./assets/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="./sketchp5.js"></script>
+  <script language="javascript" type="text/javascript" src="./mqtt.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+   body {
+    padding-top: 25px;
+  	background-color: #fffaf0;
+    text-align: center;
+  }
+   h1 { color:#A8BEFF;
+	    font-size: 20;
+   }
+
+   p { color:#fa0;}
+
+  </style>
+
+  <audio autoplay="autoplay">
+     <source src="assets/greenhouse_ambience.mp3">
+ </audio>
+
+</head>
+
+<body>
+<h1> Community Garden C-: </h1>
+
+<p>Take some time to relax and leave your mark in the community garden! Happy planting to you all :-D.</p>
+
+<div id="p5sketch"></div><script src="./sketchp5.js"></script></div>
+
+<p>
+  Audio source "Kokiri's Greenhouse Ambience | Kiki's Delivery Service ~ Studio Ghibli POV Soundscape" by
+  <a href = "https://www.youtube.com/channel/UCrmff0AXRqWDK_-lrDXRAYg">Feed Your Focus</a>.
+</p>
+ <br>
+</body>
+</html>
