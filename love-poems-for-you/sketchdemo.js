@@ -103,7 +103,7 @@ function preload() {
 }
 
 function setup() {
-  let c = createCanvas(windowWidth, windowHeight * 0.9);
+  let c = createCanvas(1400, 630);
   c.parent("myCanvas");
   frameRate(60); //set frameRate
   angleMode(DEGREES);
@@ -111,7 +111,7 @@ function setup() {
   textSize(50);
 
   begin = new Clickable();
-  begin.locate(650, 300);
+  begin.locate(550, 300);
   begin.textFont = font;
   begin.textSize = 30;
   begin.textScaled = false;
@@ -134,7 +134,7 @@ function setup() {
   }
 
   generatePoem = new Clickable();
-  generatePoem.locate(600, 400);
+  generatePoem.locate(475, 400);
   generatePoem.textFont = font;
   generatePoem.textSize = 30;
   generatePoem.textScaled = false;
@@ -157,7 +157,7 @@ function setup() {
   }
 
   cont = new Clickable();
-  cont.locate(200, 475);
+  cont.locate(600, 535);
   cont.textFont = font;
   cont.textSize = 30;
   cont.textScaled = false;
@@ -178,7 +178,7 @@ function setup() {
   }
 
   statement = new Clickable();
-  statement.locate(windowWidth * 0.25, 325);
+  statement.locate(300, 325);
   statement.textFont = font;
   statement.textSize = 30;
   statement.textScaled = false;
@@ -199,7 +199,7 @@ function setup() {
   }
 
   home = new Clickable();
-  home.locate(windowWidth * 0.52, 325);
+  home.locate(700, 325);
   home.textFont = font;
   home.textSize = 30;
   home.textScaled = false;
@@ -220,7 +220,7 @@ function setup() {
   }
 
   home2 = new Clickable();
-  home2.locate(windowWidth * 0.41, 550);
+  home2.locate(475, 500);
   home2.textFont = font;
   home2.textSize = 30;
   home2.textScaled = false;
@@ -266,48 +266,49 @@ function draw() {
   }
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 function titleScreen() {
-  image(titleGif, 25, 0);
+  image(titleGif, -90, 0);
   textAlign(CENTER);
   textSize(55);
-  text("Love Poems for You", windowWidth * 0.47, windowHeight * 0.4);
+  text("Love Poems for You", 630, 275);
   begin.draw();
 }
 
 function instructionScreen() {
-  image(instGif, 25, 25);
-  textSize(45);
+  image(instGif, -90, 25);
+  textSize(40);
   textAlign(LEFT);
-  text("A selection of verses from poems that contain the word 'love'. What love entains varies for each person, therefore, a single poem or verse can hold infinite meanings depending on the person. Whatever your interpretation is, I hope you are able to take and leave what you need from the upcoming lines of poetry. Yours truely, CTL.", windowWidth * 0.05, 150, windowWidth * 0.9, 650);
+  text("A selection of verses from poems that contain the word 'love'. What love entains varies for each person, therefore, a single poem or verse can hold infinite meanings depending on the person. Whatever your interpretation is, I hope you are able to take and leave what you need from the upcoming lines of poetry. Yours truely, CTL.", 60, 135, 1140, 500);
   // text("Take and leave whatever you need from them..", 700, 300);
   generatePoem.draw();
 }
 
 function loadingScreen() {
-  image(loading2, 25, 27);
-  image(loading, 25, 0);
+  textSize(45);
+  image(loading2, -90, 27);
+  image(loading, -90, 0);
   textAlign(CENTER);
   let numberDisplay = 6-(int(frameCount * 0.0166));
   if (numberDisplay > 2) {
     fill('#ffffff75');
     rectMode(CENTER);
     noStroke();
-    rect(windowWidth * 0.47, windowHeight * 0.45, 275, 55);
+    rect(752, 720, 275, 55);
     fill(0);
-    text('Poem loading...', windowWidth * 0.47, windowHeight * 0.47);
+    text('Poem loading...', 613, 335);
   }
 
   if (numberDisplay < 2) {
     fill('#ffffff75');
     rectMode(CENTER);
     noStroke();
-    rect(windowWidth * 0.47, windowHeight * 0.45, 325, 55);
+    rect(752, 720, 325, 55);
     fill(0);
-    text('Your poem is ready!', windowWidth * 0.47, windowHeight * 0.47);
+    text('Your poem is ready!', 605, 335);
   }
 
   if (numberDisplay < 0) {
@@ -316,7 +317,7 @@ function loadingScreen() {
 }
 
 function randomizerScreen() {
-  image(randGif, 25, 30);
+  image(randGif, -90, 30);
   textSize(35);
   textAlign(LEFT);
   text(poem[randomIndex].name, windowWidth * 0.05, windowHeight * 0.1);
@@ -326,16 +327,16 @@ function randomizerScreen() {
 }
 
 function statementScreen() {
-  image(instGif, 25, 25);
+  image(instGif, -90, 25);
   textSize(35);
   textAlign(LEFT);
-  text("For more poems pertaining to 'love', take a look at the Poetry Foundation website. \n \nAs a hopeless romantic, love, whether platonic or romantic, is a comforting concept. Love can be interpreted and understood in so many different ways, and the same can be said for poetry. I curated a selection of poems that contain 'love' in the title and selected the first verse/lines that included the word 'love' (i.e. love, beloved, lover, etc).With this project, I want to allow the viewers to have a playful fortune telling experience with love poems, where they can interpret the poems in whichever way they see it and to leave behind and take whatever they need from the words that appear in front of them on the screen. \n \nThank you for taking the time to learn more about this piece, I hope you enjoyed this experience.", windowWidth * 0.05, 75, windowWidth * 0.9, windowHeight * 0.95);
+  text("For more poems pertaining to 'love', take a look at the Poetry Foundation website. \n \nAs a hopeless romantic, love, whether platonic or romantic, is a comforting concept. Love can be interpreted and understood in so many different ways, and the same can be said for poetry. I curated a selection of poems that contain 'love' in the title and selected the first verse/lines that included the word 'love' (i.e. love, beloved, lover, etc).With this project, I want to allow the viewers to have a playful fortune telling experience with love poems, where they can interpret the poems in whichever way they see it and to leave behind and take whatever they need from the words that appear in front of them on the screen. \n \nThank you for taking the time to learn more about this piece, I hope you enjoyed this experience.", 50, 110, 1140, 500);
   home2.draw();
 }
 
 function endScreen() {
-  image(instGif, 25, 25);
-  text("Thank you for taking a spin with love, I hope you're satisfied with the poem you got! Not so much? Press the button below to spin again or to learn more about this piece. Best regards, CTL <3.", windowWidth * 0.05, 200, windowWidth * 0.9, 650);
+  image(instGif, -90, 25);
+  text("Thank you for taking a spin with love, I hope you're satisfied with the poem you got! Not so much? Press the button below to spin again or to learn more about this piece. Best regards, CTL <3.", 45, 150, 1140, 500);
   home.draw();
   statement.draw();
 }
