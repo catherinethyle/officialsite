@@ -28,7 +28,7 @@ a:active {
 
 body {
   font-size: 40px;
-  font-family: 'Sacramento', cursive;
+  font-family: 'Nanum Pen Script', cursive;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -76,7 +76,7 @@ h2 {
   margin-top: 2%;
   padding: 0;
   /* overflow: hidden; */
-  font-family: alta-california, sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
   font-weight: 400;
   font-style: normal;
 }
