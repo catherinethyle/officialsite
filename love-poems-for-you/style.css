@@ -3,7 +3,7 @@ html {
   background-color: rgb(255, 255, 255);
   font-family: 'Nanum Pen Script', cursive;
   background-image: url('img/bg.jpg');
-  background-size: auto; 
+  background-size: auto;
 }
 
 /* :link {
@@ -71,8 +71,8 @@ h2 {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
   margin-top: 2%;
   padding: 0;
   overflow: hidden;
