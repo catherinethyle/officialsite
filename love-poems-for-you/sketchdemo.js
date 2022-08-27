@@ -104,7 +104,7 @@ function preload() {
 
 function setup() {
   // original 1400, 630
-  let c = createCanvas(2200, 630);
+  let c = createCanvas(1400, 630);
   c.parent("myCanvas");
   frameRate(60); //set frameRate
   angleMode(DEGREES);
