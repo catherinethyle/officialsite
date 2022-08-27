@@ -71,11 +71,11 @@ h2 {
   display: block;
   justify-content: center;
   align-items: center;
-  /* margin-left: 10%;
-  margin-right: 10%; */
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 2%;
   padding: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: 'Nanum Pen Script', cursive;
   font-weight: 400;
   font-style: normal;
